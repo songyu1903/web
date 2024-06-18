@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 20px;
+      }
+      .header_contents {
+        background-color: tomato;
+        text-align: center;
+      }
+      .header_nav-ul {
+        background-color: cornflowerblue;
+        display: flex;
+        list-style-type: none;
+      }
+      li {
+        margin: 10px;
+      }
+      footer {
+        background-color: black;
+        text-align: center;
+        align-content: center;
+        height: 100px;
+      }
+      .contents-sec {
+        display: flex;
+        background-color: chocolate;
+      }
+      .sec-aside {
+        background-color: brown;
+        width: 200px;
+        text-align: center;
+        align-content: center;
+      }
+      .sec-main {
+        background-color: grey;
+        width: calc(100% - 200px);
+        display: flex;
+        flex-direction: column;
+      }
+      .board-list-box,
+      .product-list-box {
+        background-color: blueviolet;
+        margin: 20px auto;
+        width: 500px;
+      }
+      .board-item {
+        background-color: skyblue;
+        width: 120px;
+        padding: 20px 10px;
+        margin: 20px 10px;
+        text-align: center;
+      }
+      .product-item {
+        background-color: skyblue;
+        width: 180px;
+        padding: 20px;
+        margin: 20px 10px;
+        text-align: center;
+      }
+      .board-item-box,
+      .product-item-box {
+        display: flex;
+        justify-content: center;
+      }
+      .product-item-box {
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap"></div>
+    <!-- header 태그 -->
+    <header>
+      <section class="header_contents">Header</section>
+      <nav>
+        <ul class="header_nav-ul">
+          <li>nav 메뉴1</li>
+          <li>nav 메뉴2</li>
+          <li>nav 메뉴3</li>
+          <li>nav 메뉴4</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contents-sec">
+      <aside class="sec-aside">aside</aside>
+      <main class="sec-main">
+        main
+        <section class="board-list-box">
+          section
+          <div class="board-item-box">
+            <article class="board-item">article1</article>
+            <article class="board-item">article2</article>
+            <article class="board-item">article3</article>
+          </div>
+        </section>
+        <section class="product-list-box">
+          section
+          <div class="product-item-box">
+            <article class="product-item">article1</article>
+            <article class="product-item">article2</article>
+            <article class="product-item">article3</article>
+            <article class="product-item">article4</article>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer>footer</footer>
+  </body>
+</html>

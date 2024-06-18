@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main,
+section,
+div {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+main {
+  width: 80%;
+  height: 600px;
+}
+
+section {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+div {
+  width: 80%;
+  margin: 10px auto;
+}
+
+main div {
+  /* 하위 선택자는 내 자손요소를 모두 선택한다. */
+  border-radius: 20px;
+  background-color: gray;
+}
+
+section > div {
+  background-color: rgb(184, 255, 231);
+}
+
+.div3 + div {
+  background-color: bisque;
+}
+
+.div3 ~ div {
+  border: 2px solid red;
+}
+
+a[id] {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a[href="http://www.naver.com"]
+{
+  color: yellowgreen;
+  font-size: 30px;
+  text-decoration: none;
+}

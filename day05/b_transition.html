@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        background-color: black;
+        /* vh는 화면 전체를 채우는 요소 */
+        height: 100vh;
+      }
+
+      div {
+        border: 1px solid gold;
+        background-color: rgb(255, 210, 217);
+        width: 100px;
+        height: 100px;
+        margin: 10px auto;
+        text-align: center;
+        align-content: center;
+      }
+      .div1 {
+        transition: all 0.5s ease-in-out;
+      }
+      .div1:hover {
+        width: 200px;
+        height: 200px;
+      }
+      .div2 {
+        transition: all 2s ease-in;
+      }
+      .div2:hover {
+        background-color: red;
+        transform: scale(2, 2);
+      }
+      .div3 {
+        transition: all 1s ease;
+      }
+      .div3:hover {
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main>div.div${div$}*3 -->
+    <main>
+      <div class="div1">div1</div>
+      <div class="div2">div2</div>
+      <div class="div3">div3</div>
+    </main>
+  </body>
+</html>

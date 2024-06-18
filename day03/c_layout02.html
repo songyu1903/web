@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .header,
+      .footer {
+        background-color: black;
+        height: 100px;
+      }
+      .contents {
+        background-color: black;
+        height: 70%;
+      }
+      .menu {
+        height: 30%;
+      }
+      .menu-list {
+        display: flex;
+        background-color: cadetblue;
+        list-style-type: none;
+        height: 100%;
+        align-items: center;
+      }
+      .section {
+        height: 500px;
+        background-color: beige;
+      }
+      li {
+        color: white;
+        font-weight: bold;
+        margin: 0 10px;
+      }
+      a {
+        /* text-decoration: none; -> 밑줄을 없앤다 */
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <!-- nav바 말고 로고 등의 다른 컨텐츠가 들어갈 영역 -->
+        <div class="contents"></div>
+        <div class="menu">
+          <ul class="menu-list">
+            <li><a href="https://www.naver.com/">HOME</a></li>
+            <li><a href="https://shopping.naver.com/home">상품목록</a></li>
+            <li><a href="">상품등록</a></li>
+            <li><a href="">주문내역</a></li>
+            <li><a href="">회원정보</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section"></div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>

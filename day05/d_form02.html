@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <fieldset>
+          <legend>사용자 정보</legend>
+          <ul>
+            <li>
+              <label for="name">이름 :</label>
+              <input type="text" id="name" value="홍" autofocus />
+            </li>
+            <li>
+              <label for="loginId">id :</label>
+              <input
+                type="text"
+                id="loginId"
+                placeholder="id는 영문, 숫자로 5글자 이상 작성"
+              />
+            </li>
+            <li>
+              <label for="pw">pw :</label>
+              <input type="password" id="pw" required />
+            </li>
+            <li>
+              <input type="text" value="읽기전용" disabled />
+            </li>
+          </ul>
+          <input type="submit" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

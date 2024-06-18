@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="" method="get">
+        <div>id: <input type="text" id="" name="login-id" value="안녕" /></div>
+        <div>
+          <label>pw : <input type="password" id="" name="password" /></label>
+        </div>
+        <div>
+          <label for="birth">date : </label>
+          <input type="date" id="birth" />
+        </div>
+        <div>
+          <input type="submit" value="회원가입" />
+          <!-- 서브밋 버튼을 누르면 해당 버튼을 감싼 form에 있는 모든 데이터를 action
+            속성의 url로 전송한다.-->
+        </div>
+        <div>
+          <input type="reset" />
+        </div>
+        <div>
+          <input type="file" />
+        </div>
+        <div>
+          <input type="hidden" value="test" />
+        </div>
+        <div>
+          <h3>radio</h3>
+          <div>
+            <label for="radio1">선택1</label>
+            <input type="radio" name="option" value="red" id="radio1" />
+          </div>
+          <div>선택2 <input type="radio" name="option" value="blue" /></div>
+        </div>
+        <h3>check box</h3>
+        <div>선택1 <input type="checkbox" name="check" value="1" /></div>
+        <div>선택2 <input type="checkbox" name="check" value="2" /></div>
+        <div>선택3 <input type="checkbox" name="check" value="3" /></div>
+      </form>
+    </main>
+  </body>
+</html>

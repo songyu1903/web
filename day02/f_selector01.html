@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #my-text {
+        color: aquamarine;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: brown;
+      }
+      .my-team {
+        color: blueviolet;
+        font-size: 30px;
+        font-weight: bold;
+        background-color: antiquewhite;
+      }
+      /* 텍스트 오른쪽 정렬 */
+      #align-right {
+        text-align: right;
+      }
+
+      .box {
+        width: 200px;
+        /* 영역 테투리를 둥글게 만든다 */
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>id 와 calss</h1>
+    <span id="my-text">span 요소1</span>
+    <span class="my-team">span 요소2</span>
+    <p>p 요소1</p>
+    <!-- class와 id를 동시에 사용 가능하다 -->
+    <p class="my-team" id="align-right">p 요소2</p>
+    <div>div 요소1</div>
+    <!-- class에 여러개의 class 선택자를 사용 가능하다 -->
+    <div class="my-team box">div 요소2</div>
+  </body>
+</html>

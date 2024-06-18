@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: antiquewhite;
+  height: 50px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+li {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.sub-menu {
+  border: 1px solid skyblue;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: -15px;
+}
+.menu1 {
+  position: relative;
+}
+
+.sub-menu__ul {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+}
+
+.sub-menu__li {
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.none {
+  display: none;
+}

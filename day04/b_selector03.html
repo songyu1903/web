@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      li::first-letter {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #my-list::after {
+        content: "new";
+        background-color: black;
+        color: aquamarine;
+        border-radius: 5px;
+        position: relative;
+        top: -10px;
+      }
+      footer > ul {
+        list-style-type: none;
+        display: flex;
+      }
+      footer li {
+        margin: 0 10px;
+      }
+      footer li:not(li:last-child)::after {
+        content: "|";
+        position: relative;
+        right: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main>ul>li{리스트$}*3 -->
+    <main>
+      <ul>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li id="my-list">리스트3</li>
+      </ul>
+    </main>
+    <footer>
+      <!-- ul>li{푸터 컨텐츠$}*5 -->
+      <ul>
+        <li>푸터 컨텐츠1</li>
+        <li>푸터 컨텐츠2</li>
+        <li>푸터 컨텐츠3</li>
+        <li>푸터 컨텐츠4</li>
+        <li>푸터 컨텐츠5</li>
+      </ul>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .input-box {
+        margin: 20px;
+        width: 200px;
+        padding: 8px 0;
+
+        border: 1px solid #dadada;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      #loginId {
+        border: none;
+        outline: none;
+      }
+
+      .input-container {
+        position: relative;
+      }
+
+      #password {
+        position: absolute;
+        left: 35px;
+        top: 8px;
+
+        outline: none;
+        border: none;
+      }
+
+      .input-box2 {
+        margin: 20px;
+        width: 200px;
+        height: 30px;
+
+        border: 1px solid #dadada;
+        border-radius: 5px;
+
+        display: flex;
+        justify-content: center;
+      }
+
+      #password:focus + label {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="input-box">
+        <input type="text" id="loginId" placeholder="아이디를 입력하세요" />
+      </div>
+
+      <div class="input-container">
+        <input type="text" id="password" placeholder="비밀번호를 입력하세요" />
+        <label for="password" class="input-box2"></label>
+      </div>
+    </main>
+  </body>
+</html>

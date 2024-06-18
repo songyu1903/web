@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 인라인 */
+      .span--inline {
+        background-color: aquamarine;
+        font-size: 20px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid red;
+
+        /* line-height -> 라인 높이 */
+        line-height: 100px;
+        /* letter-spacing -> 글자 간격 */
+        letter-spacing: 10px;
+      }
+      /* 블록 */
+      .span--block {
+        display: block;
+        background-color: black;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        border: 1px solid blue;
+
+        /* 블록 너비 높이 키우기 */
+        width: 100px;
+        height: 100px;
+
+        /* 상하 10px | 좌우 auto */
+        margin: 10px auto;
+      }
+      /* 인라인 블록 */
+      .div--inline-block {
+        /* 인라인 블록은 컨텐츠의 크기만큼만 영역을 차지하여
+           인라인 요소처럼 다른 요소가 옆에 올 수 있다
+        */
+        display: inline-block;
+        background-color: pink;
+        color: blueviolet;
+        border: 1px solid red;
+
+        /* 인라인 블록은 블록요소처럼 컨텐츠의 크기를 조절할 수 있다. */
+        width: 100px;
+        height: 100px;
+      }
+      .div--none {
+        background-color: blueviolet;
+        border: 1px solid black;
+
+        width: 100px;
+        height: 100px;
+
+        /* none은 요소를 표시하지 않는다 
+           단순히 투명해지는거시 아니라 차지하고 있던 영역
+           자체가 사라진다.
+        */
+        display: none;
+        /* opacity 는 영역은 그대로 차지하고 투명해진다. */
+        /* opacity: 0; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: aquamarine">display : inline</h1>
+    <!-- span.span--inline{span$}*5 -->
+    <!-- class를 만들때 .을 붙이면 간단하게 생성이 가능하다 -->
+    <span class="span--inline">span1</span>
+    <span class="span--inline">span2</span>
+    <span class="span--inline">span3</span>
+    <span class="span--inline">span4</span>
+    <span class="span--inline">span5</span>
+    <h1>display : block</h1>
+    <!-- span.span--block{span$}*5 -->
+    <span class="span--block">span1</span>
+    <span class="span--block">span2</span>
+    <span class="span--block">span3</span>
+    <span class="span--block">span4</span>
+    <span class="span--block">span5</span>
+
+    <h1>display : none</h1>
+    <!-- div.div--none{div$}*5 -->
+    <div class="div--none">div1</div>
+    <div class="div--none">div2</div>
+    <div class="div--none">div3</div>
+    <div class="div--none">div4</div>
+    <div class="div--none">div5</div>
+
+    <h1 style="color: pink">display : inline-block</h1>
+    <!-- div.div--inline-block{div$}*5 -->
+    <div class="div--inline-block">div1</div>
+    <div class="div--inline-block">div2</div>
+    <div class="div--inline-block">div3</div>
+    <div class="div--inline-block">div4</div>
+    <div class="div--inline-block">div5</div>
+  </body>
+</html>

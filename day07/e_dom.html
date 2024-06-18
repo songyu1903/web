@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div-box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">DOM 활용하기!</h1>
+    <!-- div.div-box*3 -->
+    <div class="div-box div-border" id="bg-green"></div>
+    <div class="div-box div-border" id="bg-red"></div>
+    <div class="div-box" id="bg-yellow"></div>
+
+    <script>
+      // HTML 요소를 id로 가져오기
+      let $title = document.getElementById("title");
+      console.log($title);
+      console.dir($title);
+
+      // class로 가져오기
+      let $divBoxList = document.getElementsByClassName("div-box");
+      // console.log($divBox);
+      console.log($divBoxList[1]);
+
+      // querySelector 를 사용하면 좀더 자유롭게 선택자를 사용하여
+      // 요소를 가져올 수 있다.
+      let $bgGreen = document.querySelector("#bg-green");
+      console.log($bgGreen);
+
+      let $divBorderList = document.querySelectorAll(".div-border");
+      console.log($divBorderList);
+
+      console.log($title.innerText);
+      $title.innerText = "수정이 되는가?";
+
+      // 태그를 사용하여도 Text로 인식한다.
+      $title.innerText = "<i>innerText 사용!!</i>";
+
+      // nnerHTML을 사용하면 태그를 삽입 시킬수 있다.
+      $title.innerHTML = "<i>innerText 사용!!</i>";
+
+      // -----------------------------------------------------------
+      // 요소에 특정 속성(attribute) 가져오기
+      console.log($bgGreen.getAttribute("class"));
+
+      // 요소의 속성 변경하기
+      $bgGreen.setAttribute("style", "background-color : green");
+
+      let $bgRed = document.querySelector("#bg-red");
+      let $bgYellow = document.querySelector("#bg-yellow");
+
+      $bgRed.setAttribute("style", "background-color : red");
+      $bgYellow.setAttribute("style", "background-color : yellow");
+
+      for (let i = 0; i < $divBorderList.length; i++) {
+        $divBorderList[i].setAttribute(
+          "style",
+          "border : 3px solid black; border-radius : 5px"
+        );
+      }
+      $bgGreen.style.backgroundColor = "green";
+      $bgRed.style.backgroundColor = "red";
+    </script>
+  </body>
+</html>

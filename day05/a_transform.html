@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        border: 1px solid black;
+        background-color: rgb(189, 245, 226);
+        color: purple;
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px auto;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        align-content: center;
+      }
+
+      .div1 {
+        /* X축 오른쪽 + 왼쪽 - , Y축 아래쪽 + , 위쪽 - */
+        transform: translate(30px, -10px);
+      }
+      .div2 {
+        /* scale은 배수로 늘어난다  크기를 줄이고싶으면 - 를 사용하면 된다*/
+        transform: scale(2, 0.5);
+      }
+      .div3 {
+        /* rotate는 요소를 회전시킨다. */
+        transform: rotate(-45deg);
+      }
+      /* 가상클래스 hover를 사용해 마우스를 올려 상호작용시킨다
+      마우스를 올리면 scale 로 인해 요소의 크기가 커진다
+      */
+      .div4:hover {
+        transform: scale(1.5, 1.5);
+      }
+      .div5:hover {
+        transform: rotate(40deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main>div.div${div$}*5 -->
+    <main>
+      <div class="div1">div1</div>
+      <div class="div2">div2</div>
+      <div class="div3">div3</div>
+      <div class="div4">div4</div>
+      <div class="div5">div5</div>
+    </main>
+  </body>
+</html>

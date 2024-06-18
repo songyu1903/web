@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      main {
+        background-color: gray;
+        height: 100vh;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: antiquewhite;
+        margin: 10px auto;
+      }
+
+      @keyframes background {
+        from {
+          background-color: gold;
+          transition: all 2s ease-in;
+        }
+        50% {
+          background-color: blue;
+        }
+
+        to {
+          background-color: blueviolet;
+        }
+      }
+      .div1:hover {
+        animation: 3s infinite background;
+      }
+      @keyframes test {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: aqua;
+        }
+        50% {
+          background-color: aquamarine;
+        }
+        100% {
+          background-color: red;
+          transform: rotate(3600deg);
+        }
+      }
+      .div2:hover {
+        animation: 3s infinite test;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main>div.div${div$}*2 -->
+    <main>
+      <div class="div1">div1</div>
+      <div class="div2">div2</div>
+    </main>
+  </body>
+</html>

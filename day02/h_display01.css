@@ -1,0 +1,33 @@
+body {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+span {
+  color: greenyellow;
+  /* text-align: right; */
+  /*
+   span태그는 인라인 요소이다.
+   라인 요스의 크기는 컨텐츠의 크기와 일치한다.
+   딱 맞는 칸에 들어간 요소가 정렬이 될수는 없다
+   -> 인라인 요소에 text-align이 적용되지 않는다.
+  */
+}
+
+div {
+  color: rgb(24, 193, 235);
+  background-color: black;
+  text-align: right;
+  border-radius: 20px;
+}
+
+.my-list {
+  list-style-type: none;
+}

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>라이프스타일 슈퍼앱, 오늘의 집</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="shortcut icon" href="https://assets.ohou.se/web/assets/bookmark_icon/favicon_144x144.png">
+    <link rel="stylesheet" href="./test01.css">
+    <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+  </head>
+  <!---------------------------------------- body --------------------------------------->
+  <body>
+      <header>
+        <!---------------------------------------- main-header --------------------------------------->
+        <div class="sticky-container" style="height: 82px;">
+          <div class="main-header">
+            <div class="main-category">
+              <a class="main-button" href="https://ohou.se/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="71" height="28"><path fill="#2F3438" d="M19.711 7.307h10.226c.759 0 1.374-.606 1.374-1.355s-.615-1.356-1.374-1.356h-8.852v-3.24C21.085.607 20.47 0 19.71 0c-.759 0-1.374.607-1.374 1.356v4.596c0 .749.615 1.355 1.374 1.355Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #d1cdc4;"></path><path  d="M13.804 8.877c0 4.711-2.261 7.638-5.9 7.638s-5.901-2.927-5.901-7.638V8.54c0-4.711 2.26-7.638 5.9-7.638s5.9 2.927 5.9 7.638zm-5.9-5.264c-1.178 0-3.153.64-3.153 4.927v.337c0 4.287 1.975 4.927 3.152 4.927s3.153-.64 3.153-4.927V8.54c0-4.287-1.975-4.927-3.153-4.927Z" clip-rule="evenodd" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #d1cdc4;"></path><path fill="#2F3438" d="M9.278 23.496h4.655c.76 0 1.374.607 1.374 1.356 0 .748-.615 1.355-1.374 1.355H1.873A1.365 1.365 0 0 1 .5 24.852c0-.75.615-1.356 1.374-1.356H6.53v-4.173c0-.748.615-1.355 1.374-1.355.758 0 1.374.607 1.374 1.355zm22.79-13.84H17.343c-.759 0-1.373.607-1.373 1.355 0 .75.614 1.356 1.373 1.356h14.725c.76 0 1.374-.607 1.374-1.356 0-.748-.615-1.355-1.374-1.355M21.009 24.362c.654.499 2.897 1.475 9.59-.24a1.376 1.376 0 0 1 1.675.97 1.354 1.354 0 0 1-.984 1.653c-2.745.704-5.095 1.055-7.035 1.056-2.15 0-3.797-.432-4.927-1.294-1.103-.843-1.686-2.063-1.686-3.532v-2.163c0-.748.614-1.356 1.373-1.356h9.703v-2.03h-9.703a1.365 1.365 0 0 1-1.373-1.355c0-.749.614-1.356 1.373-1.356h11.077c.759 0 1.373.607 1.373 1.356v4.741c0 .749-.614 1.356-1.373 1.356h-9.703v.807c0 .632.191 1.06.62 1.387M68.135 0a1.41 1.41 0 0 0-1.419 1.4v11.2c0 .773.636 1.4 1.42 1.4a1.41 1.41 0 0 0 1.418-1.4V1.4c0-.773-.635-1.4-1.419-1.4m-6.624 12.39a1.374 1.374 0 0 0 1.759.808 1.35 1.35 0 0 0 .823-1.737c-.045-.12-.944-2.5-3.191-4.195l3.49-3.83c.362-.398.454-.97.233-1.458a1.38 1.38 0 0 0-1.255-.804h-8.56c-.759 0-1.374.607-1.374 1.356 0 .748.615 1.355 1.374 1.355h5.477l-6.499 7.132a1.34 1.34 0 0 0 .103 1.914c.263.233.591.348.919.348.376 0 .75-.152 1.022-.45l3.224-3.538c1.706 1.19 2.437 3.054 2.454 3.1Z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #292c2e;"></path><path fill="#2F3438" fill-rule="evenodd" d="M67.072 17.362c0-.749.615-1.356 1.374-1.356s1.374.607 1.374 1.356v6.627c0 1.914-1.579 3.471-3.519 3.471h-6.634c-1.94 0-3.519-1.557-3.519-3.471v-6.627c0-.749.615-1.356 1.374-1.356s1.374.607 1.374 1.356v2.095h8.176zm-7.405 7.387h6.634c.425 0 .771-.34.771-.76v-1.821h-8.176v1.82c0 .42.346.761.771.761m-18.999-8.935c1.664 0 3.052-.87 3.91-2.452.678-1.252 1.037-2.982 1.037-5.004s-.359-3.752-1.038-5.004C43.72 1.772 42.332.902 40.668.902s-3.052.87-3.91 2.452c-.678 1.252-1.037 2.982-1.037 5.004s.359 3.752 1.038 5.004c.857 1.581 2.245 2.452 3.909 2.452m0-12.201c2.093 0 2.2 3.952 2.2 4.745 0 .792-.107 4.745-2.2 4.745s-2.2-3.953-2.2-4.745.106-4.745 2.2-4.745" clip-rule="evenodd" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #292c2e;"></path><path fill="#2F3438" d="M47.746 1.81c0-.748.615-1.355 1.374-1.355s1.374.607 1.374 1.356V25.73c0 .749-.615 1.355-1.374 1.355a1.365 1.365 0 0 1-1.374-1.355v-4.514c-2.992.733-7.314.95-9.812.95h-2.091a1.365 1.365 0 0 1-1.374-1.355c0-.749.615-1.356 1.374-1.356h2.091c4.378 0 7.991-.493 9.812-1.052z" data-darkreader-inline-fill="" style="--darkreader-inline-fill: #d1cdc4;"></path></svg>
+              </a>
+            <div class="main-category-item">
+              <a class="main-button" href="https://ohou.se/">
+                <span class="category-item">커뮤니티</span>
+              </a>
+              <a class="main-button" href="https://store.ohou.se">
+                <span class="category-item">쇼핑</span>
+              </a>
+              <a class="main-button" href="https://ohou.se/experts">
+                <span class="category-item">인테리어/생활</span>
+              </a>
+            </div>
+            <div class="main-search-login">
+              <div class="search-login-category">
+                <div class="search">
+                      <div class="search-box">
+                        <div class="search-glass">
+                            <img  src="./image/search_magnifier_icon_145939.png" alt="">
+                        </div>
+                           <input type="text" value placeholder="통합검색" id="search_24">
+                           <label for="search_24" class="input-search-box"></label>
+                        </input>
+                        </div>
+                    </div>
+                    <a aria-label="장바구니 페이지 링크 버튼" class="shopping" href="https://ohou.se/cart">
+                      <span >
+                        <img src="./image/free-icon-shopping-cart-7133298.png" alt="">
+                      </span>
+                    </a>
+                    <div class="login">
+                      <a href="https://ohou.se/users/sign_in?redirect_to=%2F" class="loginId">로그인</a>
+                      <a href="https://ohou.se/normal_users/new" class="password">회원가입</a>
+                      <a href="https://ohou.se/customer_center" class="service">고객센터</a>
+                      <span class="writing-box">글쓰기
+                        <img class="down-arrow" src="./image/free-icon-down-arrow-152415.png" alt="">
+                      </span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <!---------------------------------------- sub-header --------------------------------------->
+        <div class="sticky-container" style="height: 51px;">
+          <div class="sub-header">
+            <div class="sub-category">
+              <div class="sub-category-items">
+                <nav class="sub-category-item">
+                  <span class="item">
+                    <a class="item-box" href="https://ohou.se/">홈</a>
+                  </span>
+                  <span class="item">
+                    <a class="item-box" href="https://contents.ohou.se/topics/recommend">추천</a>
+                  </span>
+                  <span class="item">
+                    <a class="item-box" href="https://contents.ohou.se/topics/hashtag-channel">#채널</a>
+                  </span>
+                  <span class="item">
+                    <a class="item-box" href="https://contents.ohou.se/projects">집들이</a>
+                  </span>
+                  <span class="item">
+                    <a class="item-box" href="https://ohou.se/contents/card_collections">집사진</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://ohou.se/interior3ds" class="item-box">3D인테리어</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/cook" class="item-box">홈스토랑</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/child_care" class="item-box">육아</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/planterior" class="item-box">플랜테리어</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/pets" class="item-box">반려동물</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/camping" class="item-box">캠핑</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/hobby" class="item-box">취미</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://ohou.se/competitions/feed" class="item-box">이벤트</a>
+                  </span>
+                  <span class="item">
+                    <a href="https://contents.ohou.se/topics/hot_place" class="item-box">핫플레이스</a>
+                  </span>
+                </nav>
+                <div class="popular-search">
+                    <div class="sub-popular-box">
+                      <span class="number-font">1</span>
+                      <span class="color-font">NEW</span>
+                      <span class="cat">고양이 카펫</span>
+                      <img class="down-arrow" src="./image/free-icon-down-arrow-152415.png" alt="">
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <div class="body">
+    <!---------------------------------------- main --------------------------------------->
+    <div class="main">
+      <div class="main-page">
+        <section class="main-sec">
+          <img class="main-image" src="./image/171525291036798459.avif" alt=""/>
+        <div class="main-image-font">
+          <p>세 가지 시공에 DIY를 더했어요🥝</p>
+          <span class="Writer">
+            <img class="writer-image" src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/170729514134770237.jpeg?w=36&h=36&c=c" alt="">
+            <span class="writer-font">소울프로바이더
+              <a href=""></a>
+            </span>
+          </span>
+        </div>
+      </section>
+    </div>
+  <div class="sub-page">
+    <section class="sub-sec">
+      <img class="sub-image" src="./image/171775192689280297.avif" alt="">
+    </section>
+  </div>
+  </div>
+  <!--------------------------------------- main2 --------------------------------------->
+  <div class="main2">
+    <div class="main2-category">
+      <div class="main2-category-event">
+        <a href="https://store.ohou.se/exhibitions/12860?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/쿠폰.avif" alt="">
+          <span class="img-font">쿠폰미리받기</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://store.ohou.se/exhibitions/12390?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/시계.png" alt="">
+          <span class="img-font">오늘의딜</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+          <a  href="https://contents.ohou.se/projects?affect_type=Home&affect_id=0">
+            <img class="category-img" src="./image/집들이.avif" alt="">
+            <span class="img-font">집들이</span>
+          </a>
+      </div>
+      <div class="main2-category-event">
+          <a href="https://ohou.se/competitions/1002?affect_type=Home&affect_id=0">
+            <img class="category-img" src="./image/행운출첵.avif" alt="">
+            <span class="img-font">행운출첵</span>
+          </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://ohou.se/competitions/1045?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/챌린지참여.avif" alt="">
+          <span class="img-font">챌린지참여</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://ohou.se/advices/10653?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/크리에이터.png" alt="">
+          <span class="img-font">크리에이터</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://store.ohou.se/exhibitions/10795?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/장보기.png" alt="">
+          <span class="img-font">장보기</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://store.ohou.se/exhibitions/10017?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/빠른배송.png" alt="">
+          <span class="img-font">빠른배송</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://o2o.ohou.se/remodeling/home/consultation?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/리모델링.png" alt="">
+          <span class="img-font">리모델링</span>
+        </a>
+      </div>
+      <div class="main2-category-event">
+        <a href="https://ohou.se/competitions/917?affect_type=Home&affect_id=0">
+          <img class="category-img" src="./image/입주청소.avif" alt="">
+          <span class="img-font">입주청소</span>
+        </a>
+      </div>
+    </div>
+  </div>
+    <!--------------------------------------- sub-main --------------------------------------->
+  <div class="sub-main">
+      <div class="contents">
+        <div class="contents-box">
+          <div class="contents-font-box">
+            <strong class="contents-font">
+              <a href="https://contents.ohou.se/topics/pets">이런 사진 찾고 있나요?</a>
+            </strong>
+          </div>
+          <div class="interior-contents2">
+            <span class="interior-contents-font">좋아하실 만한 인테리어 콘텐츠를 추천해드려요</span>
+          </div>
+        </div>
+        <div class="more">
+          <button type="button" class="more-button">
+            <a href="https://contents.ohou.se/topics/pets">더보기</a>
+          </button>
+        </div>
+      </div>
+      <div>
+        <div class="sub-img-page">
+          <div class="sub-img-box">
+           <div class="sub-img">
+            <ul class="img-box">
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                    <img class="animal-img" src="image/멍멍이.avif" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="image/고양이.avif" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/170635681644283745.jpeg?w=360&h=360&c=c" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="image/고양이2.avif" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="image/멍멍이2.avif" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="image/멍멍이3.avif" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="image/168508722757555142.avif" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img src="image/고양이3.avif" class="animal-img" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box"></li>
+              <li class="sub-image-box"></li>
+              <li class="sub-image-box"></li>
+              <li class="sub-image-box"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-main">
+    <div class="contents">
+      <div class="contents-box">
+        <div class="contents-font-box">
+          <strong class="contents-font">
+            <a href="https://contents.ohou.se/projects">따끈따끈🍚 새집들이가 올라왔어요!!</a>
+          </strong>
+        </div>
+      </div>
+      <div class="more">
+        <button type="button" class="more-button">
+          <a href="https://contents.ohou.se/projects">더보기</a>
+        </button>
+      </div>
+    </div>
+    <div class="sub-img-page">
+      <div class="sub-houses">
+        <div class="sub-houses-img-font-box">
+          <div class="sub-houses-img-box">
+            <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/projects/cover_images/171820458497386581.jpg?w=360&h=240&c=c" class="houses-img" alt="">
+          </div>
+          <div class="sub-houses-font-box">
+            <p class="sub-houses-font">팬트리에 마련한 다이닝 공간!
+              <span class="houses-color-none">
+                집이 넓어 보이는 비결!
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="sub-houses-img-font-box">
+          <div class="sub-houses-img-box">
+            <img src="./image/아기자기한신혼집.avif" class="houses-img" alt="">
+          </div>
+          <div class="sub-houses-font-box">
+            <p class="sub-houses-font">아기자기한 소품+식물로 꾸민 신혼집?!
+              <span class="houses-color-none">
+                이건 귀하군요!✨
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="sub-houses-img-font-box">
+          <div class="sub-houses-img-box">
+            <img src="./image/핑크의집.avif" class="houses-img" alt="">
+          </div>
+          <div class="sub-houses-font-box">
+            <p class="sub-houses-font">핑크와 귀여운 템에 진심!!
+              <span class="houses-color-none">
+                디자이너의 아기자기한 방🎀
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="sub-houses-img-font-box">
+          <div class="sub-houses-img-box">
+            <img src="./image/포근한집.avif" class="houses-img" alt="">
+          </div>
+          <div class="sub-houses-font-box">
+            <p class="sub-houses-font">따스함이 키워드!
+              <span class="houses-color-none">
+                보기만 해도 포근함이 느껴지는 홈스타일링🌻
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-main">
+    <div class="contents">
+      <div class="contents-box">
+        <div class="contents-font-box">
+          <strong class="contents-font">
+            <a href="https://ohou.se/experts">유저들의 인테리어 시공 리뷰</a>
+          </strong>
+        </div>
+      </div>
+      <div class="more">
+        <button type="button" class="more-button">
+          <a href="https://ohou.se/experts">더보기</a>
+        </button>
+      </div>
+    </div>
+    <div class="sub-img-page">
+      <div class="construction">
+        <div class="construction-font-img-box">
+          <div class="construction-img-box">
+            <a href="https://ohou.se/experts/review/31610">
+              <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170454234168489343.jpeg?w=480&h=321&c=c" class="construction-img" alt="">
+            </a>
+          </div>
+          <div class="construction-font-box">
+            <p class="construction-font">
+              <a  href="https://ohou.se/experts/review/31610">
+                디자인 스튜디오 안도
+                <p class="construction-color-none">
+                  큰돈이 들어가는 일이라 걱정도 많고 고민도 많았는데 방문상담하고 바로 여기서 하고싶다고 생각이 들었어요.
+                  특히 오래된아파트 투베이구조라 주방이 너무 좁아서 구조변경을 원했는데 다른업체 상담했을땐 생각하지도 못했던 구조를 보여주셔서 너무 마음에 들었습니다! 
+                  생각했던것보다 예산을 초과했지만 지금 공사후 한달이 넘어 살고있는데 너무너무 만족하고있어요! 
+                  특히 바로바로 소통이되고, 고민되는부분은 적절히 추천 잘해주셔서 감사했어요. 원하는부분 다 상담해주시고, 공사후에도 바로바로 a/s와주시고 정말 첫 내집마련에 아이들이랑 요즘 너무 행복하게 지내고있습니다. 감사합니다.
+                </p>
+              </p>
+            </a>
+            </div>
+          </div>
+        <div class="construction-font-img-box">
+          <div class="construction-img-box">
+            <a  href="https://ohou.se/experts/review/31681">
+              <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170513045097438619.jpg?w=480&h=321&c=c" class="construction-img" alt="">
+            </a>
+          </div>
+          <div class="construction-font-box">
+            <p class="construction-font">
+              <a href="https://ohou.se/experts/review/31681">
+                퍼스트 디자인
+                <p class="construction-color-none">
+                  지인들이 집 예쁘다고 난리에요~
+                  인테리어 1도 모르던 사람인데 대표님이 하나하나 설명도 
+                  잘해주시고 여쭈어보면 안어울리는건 별로다하고 확실하게 말해주시는것도 너무 좋았어요. 
+                  저는 처음부터 끝까지 다다다 좋았습니다. 
+                  저희집 보고 주변에서 나중에라도 이사가면 퍼스트에서 할거라고 얘기해요~ 무조건 강추라고 얘기합니다.
+                  사진보다 실제가 훨씬 이뻐요~^^
+                </p>  
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="construction-font-img-box">
+          <div class="construction-img-box">
+            <a  href="https://ohou.se/experts/review/32179">
+              <img src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170912480480005392.jpg?w=480&h=321&c=c" class="construction-img" alt="">
+            </a>
+          </div>
+          <div class="construction-font-box">
+            <a href="https://ohou.se/experts/review/32179">
+              <p class="construction-font">
+                커먼 아이디
+                <p class="construction-color-none">
+                  지인들에게 자신감있게 추천할 수 있는 커먼아이디 입니다!
+                  꼼꼼하고 친절한 대표님(실장님)의 상담과 한달에 두 건 이상의 현장은 진행하지 않고 대표님이 모든 현장을 직접 관리하신다는 부분이 정말 큰 메리트로 다가와 첫미팅 당일 커먼 아이디를 선택하게 되었습니다.
+                  
+                  공사전 현장체크, 보유하고 있는 가전/가구 체크 등등 꼼꼼한 사전 협의도 만족스러웠고, 단호하게 제안해주신 샤시와 분배기 교체로 따뜻한 집에서 잘 지내고 있습니다.
+                  
+                  인테리어 진행 중에도 저희 부부는 실장님만 믿고 맘 편하게 있을 수 있었어요. 
+                  디테일한 부분까지 본인의 집처럼 섬세하게 신경 써 주셔서 인테리어 진행하는 동안 스트레스도 전혀 없었고, 시공 마감도 너무나 깔끔했습니다.  
+                  이사 이후엔 진정한 집순이 집돌이가 되었어요..집에만 있어도 너무 좋거든요..ㅎㅎ 
+                  
+                  이렇게 포근하고 예쁜집에서 지낼 수 있게되어 후기를 빌어 다시한번 감사인사 드리고 싶습니다. 
+                  항상 번창하시고 다음 이사때도 고민없이 다시 연락드리겠습니다.
+                </p>  
+            </p>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-main">
+    <div class="contents">
+      <div class="contents-box">
+        <div class="contents-font-box">
+          <strong class="contents-font">
+            <a href="https://store.ohou.se/exhibitions">오늘의 기획전</a>
+          </strong>
+        </div>
+      </div>
+      <div class="more">
+        <button type="button" class="more-button">
+          <a href="https://store.ohou.se/exhibitions">더보기</a>
+        </button>
+      </div>
+    </div>
+    <div class="sub-img-page">
+      <div class="sub-img-box">
+        <div class="sub-img">
+          <ul class="img-box">
+            <li class="plan-img">
+              <div class="sub-plan-font-img-box">
+                <div class="hidden-img">
+                  <img src="./image/리퍼마켓.avif" class="sub-plan-img" alt="">
+                </div>
+                <div class="sub-plan-font-box">
+                  <p class="plan-font">전시, 반품, 스크래치 득템의 기회!</p>
+                  <p class="construction-font">빠른 품절! 리퍼마켓 ~90%</p>
+                </div>
+              </div>
+            </li>
+            <li class="plan-img">
+              <div class="sub-plan-font-img-box">
+                <div class="hidden-img">
+                  <img src="./image/오픈런딜.avif" class="sub-plan-img" alt="">
+                </div>
+                <div class="sub-plan-font-box">
+                  <p class="plan-font">전상품 무료배송, 요일마다 바뀌는 파격특가 장보기!</p>
+                  <p class="construction-font">오픈런딜!!</p>
+                </div>
+              </div>
+            </li>
+            <li class="plan-img">  <div class="sub-plan-font-img-box">
+              <div class="hidden-img">
+                <img src="./image/오굿즈.avif" class="sub-plan-img" alt="">
+              </div>
+              <div class="sub-plan-font-box">
+                <p class="plan-font">오늘의집 큐레이션 편집샵 오!굿즈</p>
+                <p class="construction-font">오직 여기서만, O!Goods</p>
+              </div>
+            </div></li>
+            <li class="plan-img">
+              <a class="plan-more" href="https://store.ohou.se/exhibitions">
+                <div class="bg-more-button">
+                  <img class="plan-more-button" src="./image/free-icon-right-arrow-2223627.png" alt="">
+                </div>
+                <div>더보기</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sub-main">
+    <div class="contents">
+      <div class="contents-box">
+        <div class="contents-font-box">
+            <strong class="contents-font">
+              <a href="https://store.ohou.se/ranks?type=best">베스트</a>
+            </strong>
+        </div>
+      </div>
+      <div class="more">
+        <button type="button" class="more-button">
+          <a href="https://store.ohou.se/ranks?type=best">더보기</a>
+        </button>
+      </div>
+    </div>
+    <div class="sub-img-page">
+      <div class="best-categoty">
+      </div>
+      <div class=""></div>
+    </div>
+  </div>
+
+
+
+
+
+  </div>
+  </div>
+
+  <!--------------------------------------- footer --------------------------------------->
+  <footer class="main-footer">
+    <div class="main-footer-category">
+      <div class="service-center">
+        <div class="center">
+          <a class="go-center" href="https://ohou.se/customer_center">고객센터
+            <img class="right-arrow" src="./image/free-icon-right-arrow-271228.png" alt="">
+          </a>
+        </div>
+        <div class="footer-telephone">
+          <p class="telephone">1670-0870</p>
+          <time datetime="09:00" class="center-time">09:00</time>
+          <time datetime="18:00" class="center-time">~18:00</time>
+        </div>
+        <div class="working-day">
+          <div class="work">평일: 전체 문의 상담</div>
+          <div class="work">토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담</div>
+          <div class="work">일요일: 휴무</div>
+        </div>
+        <div class="consulting">
+          <h1 class="kakaotalk">카톡 상담(평일 09:00~18:00)</h1>
+          <a class="email" href="https://ohou.se/contacts/new">이메일 문의</a>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="about-us">
+        <a class="guide" href="https://www.bucketplace.com/">회사소개</a>
+        <a class="guide" href="https://www.bucketplace.com/careers/">채용정보</a>
+        <a class="guide" href="https://ohou.se/usepolicy">이용약관</a>
+        <a class="guide-bold" href="https://ohou.se/privacy">개인정보 처리방침</a>
+        <a class="guide" href="https://ohou.se/customer_notices">공지사항</a>
+        <a class="guide" href="https://safetybucketplace.zendesk.com/hc/ko">안전거래센터</a>
+        <a class="guide" href="https://www.partnerbucketplace.com/hc/ko/articles/19259629646361-%EC%98%A4%EB%8A%98%EC%9D%98%EC%A7%91-%EC%9E%85%EC%A0%90%EC%95%88%EB%82%B4">입점신청</a>
+        <a class="guide" href="https://ohou.se/contacts/new?type=request">제휴/광고 문의</a>
+        <a class="guide" href="https://pro.ohou.se/?utm_source=ohouse&utm_medium=web&utm_campaign=prosignup&utm_content=footer">시공파트너 안내</a>
+        <a class="guide" href="https://ohouse-ad.oopy.io">상품광고 소개</a>
+        <a class="guide" href="https://ohou.se/contacts/new">고객의 소리</a>
+      </div>
+      <div class="line"></div>
+      <div class="company">
+        <div class="company-name-overflow">
+          <div class="company-name">
+            <div class="information">
+              <span class="small-line">|</span>(주)버킷플레이스
+            </div>
+            <div class="information">
+              <span class="small-line">| </span>대표이사 이승재
+            </div>
+            <div class="information">
+              <span class="small-line">|</span>
+              <address class="company-address">서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층</address>
+            </div>
+            <div class="information">
+              <span class="small-line">|</span>
+              contact@bucketplace.net
+            </div>
+            <div class="information">
+              <span class="small-line">|</span>
+              <span>사업자등록번호 119-86-91245</span>
+              <span class="guide-bold">사업자정보확인</span>
+            </div>
+            <div class="information">
+              <span class="small-line">|</span>
+              통신판매업신고번호 제2018-서울서초-0580호
+            </div>
+          </div>
+        </div>
+        <div>
+          <span style="font-size: 10px;">고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</span>
+          <a target="_blank" href="https://ohouse.notion.site/da111ffbfc7c45a0a1327e23a7bd5dde" class="bank">
+            서비스가입사실확인
+          </a>
+        </div>
+        <div class="sponsor">
+          <div>
+            <img src="" alt="">
+          </div>
+          <div><img src="" alt=""></div>
+          <div><img src="" alt=""></div>          
+        </div>
+      </div>
+
+  </div>
+</footer>
+</body>
+</html>

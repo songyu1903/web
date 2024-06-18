@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+    <script defer src="../js/c_event01.js"></script>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>인풋, 버튼 테스트</legend>
+        <label class="flex">
+          <span>테스트 1 : </span>
+          <input type="text" class="input-test1" />
+        </label>
+        <label class="flex">
+          <span>테스트 2 : </span>
+          <input type="text" class="input-test2" />
+        </label>
+        <button>버튼</button>
+      </fieldset>
+      <fieldset>
+        <legend>체크 박스 테스트</legend>
+        <label>
+          <span>검정</span>
+          <input type="checkbox" name="color" value="black" class="color" />
+        </label>
+        <label>
+          <span>빨강</span>
+          <input type="checkbox" name="color" value="red" class="color" />
+        </label>
+        <label>
+          <span>파랑</span>
+          <input type="checkbox" name="color" value="blue" class="color" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>라디오 테스트</legend>
+        <label>
+          <span>피자</span>
+          <input type="radio" name="food" value="pizza" class="food" />
+        </label>
+        <label>
+          <span>햄버거</span>
+          <input type="radio" name="food" value="burger" class="food" />
+        </label>
+        <label>
+          <span>파스타</span>
+          <input type="radio" name="food" value="pasta" class="food" />
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
