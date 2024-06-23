@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="https://assets.ohou.se/web/assets/bookmark_icon/favicon_144x144.png">
     <link rel="stylesheet" href="./ohou.css">
     <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
-    <script defer src="./test01.js"></script>
+    <script defer src="./ohou.js"></script>
   </head>
   <!---------------------------------------- body --------------------------------------->
   <body>
@@ -240,6 +240,9 @@
       <div>
         <div class="sub-img-page">
           <div class="sub-img-box">
+            <button id="scroll-left2" class="scroll-button" style="display: none;">
+              <img src="/image/free-icon-left-arrow-271220.png" alt="">
+            </button>
            <div class="sub-img">
             <ul class="img-box">
               <li class="sub-image-box">
@@ -299,15 +302,39 @@
                 </div>
               </li>
               <li class="sub-image-box">
-                <img class="animal-img" src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171523648911699790.jpeg?w=360&h=360&c=c" alt="">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img class="animal-img" src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171523648911699790.jpeg?w=360&h=360&c=c" alt="">
+                  </div>
+                </div>
               </li>
               <li class="sub-image-box">
-                <img class="animal-img" src="https://image.ohouse.com/video-service-prd-s3-bucket-thumbnail/667308b4224a967e0fa45dce/667308b4224a967e0fa45dce.0000001.jpg?w=360&h=360&c=c" alt="">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                    <img class="animal-img" src="https://image.ohouse.com/video-service-prd-s3-bucket-thumbnail/667308b4224a967e0fa45dce/667308b4224a967e0fa45dce.0000001.jpg?w=360&h=360&c=c" alt="">
+                  </div>
+                </div>
               </li>
-              <li class="sub-image-box"></li>
-              <li class="sub-image-box"></li>
+              <li class="sub-image-box">
+                <div class="hidden-img-box">
+                  <div class="hidden-img">
+                     <img class="animal-img" src="https://prs.ohou.se/apne2/content/uploads/cards/v1-253674972876800.jpg?w=360&h=360&c=c" alt="">
+                  </div>
+                </div>
+              </li>
+              <li class="sub-image-box">
+                <a class="plan-more" href="https://store.ohou.se/exhibitions">
+                  <div class="bg-more-button">
+                    <img class="plan-more-button" src="./image/free-icon-right-arrow-2223627.png" alt="">
+                  </div>
+                  <div>더보기</div>
+                </a>
+              </li>
             </ul>
           </div>
+          <button id="scroll-right2" class="scroll-button">
+            <img src="./image/free-icon-right-arrow-271228 (1).png" alt="">
+          </button>
         </div>
       </div>
     </div>
@@ -552,6 +579,7 @@
         <div class="best-category-box">
           <div class="best-category">
             <ul class="hidden-category-box">
+              <button id="scroll-left" class="scroll-button" style="display: none;">&lt;</button>
               <li class="hidden-category">
                 <label class="category-label">
                   <span class="best-category-name">전체</span>
@@ -631,7 +659,6 @@
                 <label class="category-label">
                   <span class="best-category-name">공구DIY</span>
                 </label>
-                
               </li>
               <li class="hidden-category">
                 <label class="category-label">
@@ -653,6 +680,7 @@
                   <span class="best-category-name">혼수.신혼</span>
                 </label>
               </li>
+              <button id="scroll-right" class="scroll-button">&gt;</button>
             </ul>
           </div>
         </div>

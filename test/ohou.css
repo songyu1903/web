@@ -540,6 +540,16 @@ a {
   left: 0px;
   transition: all 0.2s ease 0s;
 }
+.sub-image-box:last-of-type {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.sub-image-box > li:last-of-type {
+  margin-right: 0;
+}
 
 /*------------------------------------------- sub-main 끝 영역 -------------------------------------------*/
 
@@ -709,13 +719,17 @@ a {
 .best-category-margin {
   margin-bottom: 16px;
 }
+
 .best-category-box {
   position: relative;
 }
+
 .best-category {
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
+
 .hidden-category-box {
   display: flex;
   margin: 0px;
@@ -735,12 +749,16 @@ a {
     rgb(255, 255, 255) 100%
   );
   pointer-events: none;
+  padding: 0px;
+  margin: 0px;
 }
+
 .hidden-category {
   margin: 0px 6px 0px 0px;
   padding: 0px;
   flex-shrink: 0;
 }
+
 .category-label {
   display: flex;
   align-items: center;
@@ -752,12 +770,49 @@ a {
   background-color: rgb(247, 249, 250);
   cursor: pointer;
 }
+
 .category-label:hover {
   background-color: rgb(55, 207, 253);
   color: white;
 }
+
 .best-category-name {
   font-size: 14px;
+}
+
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: none;
+  width: 40px;
+  height: 45x;
+  padding: 8px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.scroll-button:hover {
+  background-color: rgb(45, 187, 233);
+}
+#scroll-left {
+  left: 0;
+}
+#scroll-right {
+  right: 0;
+}
+#scroll-left2 {
+  left: 0;
+}
+#scroll-right2 {
+  right: 0;
 }
 .best-font-img-box {
   min-width: 768px;
